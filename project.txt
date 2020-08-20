@@ -1,0 +1,48 @@
+import pyttsx3
+import os 
+ 
+pyttsx3.speak(" welcome ")
+
+while True : 
+	print("chat with me with your requirments:" , end = ' ' )
+	p = input()
+
+
+	if  (("run" in p) or ("open" in p ) or ("execute" in p ) or ("launch" in p ))  and (("notepad" in p) or (" editor" in p )):
+		pyttsx3.speak(" sure opening notepad ")
+		os.system(" notepad")
+
+	elif (("run" in p)or ("open" in p ) or ("execute" in p ) or ("launch" in p )) and ("chrome" in p) :
+		pyttsx3.speak(" sure opening chrome")
+		os.system(" chrome")
+
+	elif (("run" in p)or ("open" in p ) or ("execute" in p ) or ("launch" in p )) and ("explorer" in p) :
+		pyttsx3.speak(" sure opening explorer ")
+		os.system(" explorer")
+
+	elif (("run" in p)or ("open" in p ) or ("execute" in p ) or ("launch" in p )) and ("calculator" in p) :
+		pyttsx3.speak(" sure opening calculator ")
+		os.system("calc")
+
+
+	
+	elif (("run" in p) or ("open" in p )or ("execute" in p ) or ("launch" in p )) and ("control panel" in p) :
+		pyttsx3.speak(" sure opening control panel ")
+		os.system(" control panel")
+
+
+	elif  (("run" in p) or ("open" in p ) or ("execute" in p ) or ("launch" in p ))and  (("player" in p) or ("media" in p )) :
+		pyttsx3.speak(" sure opening media player ")
+		os.system(" wmplayer")
+	elif  (("run" in p) or ("open" in p ) or ("execute" in p ) or ("launch" in p ))and  ("vlc " in p) :
+		pyttsx3.speak(" sure opening vlc ")
+		os.system(" wmplayer")
+
+
+	elif  ("exit" in p ) or ( " quit" in p ) or (" close" in p ) :
+		break
+
+	else: 
+		print("don't support")
+
+   
